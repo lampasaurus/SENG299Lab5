@@ -12,13 +12,13 @@ var port = process.env.PORT || 30118;
 
 var app = express();
 
-var db = new Storage(null, null, 'timer');
+var db = new Storage(null, null, 'keiranr');
 
 // use the parse to get JSON objects out of the request. 
 app.use(bodyParser.json());
 
 // server static files from the public/ directory.
-app.use(express.static('keiranr'));
+app.use(express.static('public'));
 
 /**
  * Handle a request for task data.
